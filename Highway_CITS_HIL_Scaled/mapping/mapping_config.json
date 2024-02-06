@@ -1,0 +1,75 @@
+{
+    "prototypes": [
+        {
+            "name": "HilCar",
+            "accel": 10000.0,
+            "decel": 10000.0,
+            "emergencyDecel": 10000.0,
+            "length": 5.00,
+            "maxSpeed": 10000.0,
+            "minGap": 2.5,
+            "sigma": 0.5,
+            "tau": 1,
+            "speedFactor": 10000.0,
+            "speedMode": "AGGRESSIVE",
+            "laneChangeMode": "OFF",
+            "color": "blue",
+            "deviations": {
+                "speedFactor": 0.0,
+                "length": 0.0,
+                "minGap": 0.0,
+                "maxSpeed": 0.0,
+                "accel": 0.0,
+                "decel": 0.0,
+                "tau": 0.0
+            }
+        },
+        {
+            "name": "Car",
+            "accel": 1.5,
+            "decel": 4.5,
+            "length": 5.00,
+            "maxSpeed": 10.0,
+            "minGap": 2.5,
+            "sigma": 0.5,
+            "tau": 1,
+            "laneChangeMode": "OFF",
+            "color": "red"
+        }
+    ],
+
+    "vehicles": [
+        {
+            "startingTime": 1.0,
+            "targetFlow": 1800,
+            "maxNumberVehicles": 1,
+            "route": "2",
+            "lanes": [ 1 ],
+            "types": [
+
+                {
+                    "name": "HilCar",
+                    "applications": ["org.eclipse.mosaic.app.alex.AgilexHunterApp"],
+		            "weight": 0.5
+                }
+            ]
+        },
+        {
+            "startingTime": 1.0,
+            "targetFlow": 1800,
+            "maxNumberVehicles": 1,
+            "route": "2",
+            "lanes": [ 1 ],
+            "types": [
+
+                {
+                    "name": "Car",
+                    "applications": ["org.eclipse.mosaic.app.alex.CamSendingApp_Scaled"],
+		            "weight": 0.5
+                }
+            ]
+        }
+    ]
+}
+
+

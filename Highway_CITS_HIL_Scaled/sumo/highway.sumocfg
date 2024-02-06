@@ -1,0 +1,12 @@
+<configuration>
+	<input>
+		<net-file value="highway.net.xml" />
+	</input>
+	<time>
+		<begin value="0" />
+		<end value="10000" />
+	</time>
+	<processing>
+		<step-length value="0.02"/>
+	</processing>
+</configuration>
