@@ -1,0 +1,33 @@
+<routes>
+	<!--<vType id="normalCar" vClass="passenger" color="255,255,0" length="4" maxSpeed="20" speedFactor="1" minGap="2.0" carFollowModel="Krauss" accel="0.80" decel="4.5" sigma="0.5" tau="1" />
+
+	<vType id="emVehicle" vClass="emergency" guiShape="emergency">
+   		<param key="has.bluelight.device" value="true" />
+	</vType>
+	-->
+
+	<route id="ambulance" edges="37308528#0 37308528#1 37308528#3 37308528#4 209162389#2 209162389#4 209162389#5 209162389#6 209162389#7 209162389#8" />
+
+    <route id="opp_ambulance" edges="-209162389#8 -209162389#7 -209162389#6 -209162389#5 -209162389#4 -209162389#2 -37308528#4 -37308528#3 -37308528#1 -37308528#0" />
+
+    <route id="perp1" edges="-242877424#1 -176221672#1 -176221672#0" />
+
+    <route id="perp2" edges="176221672#0 176221672#1" />
+
+
+	<!--
+	<flow id="1" begin="1" period="exp(0.25)" type="normalCar" route="ambulance" departLane="0" departPos="0" departSpeed="avg" />
+
+	
+
+	
+	<flow id="3" begin="1" period="exp(0.25)" type="normalCar" route="perp1" departLane="0" departPos="0" departSpeed="avg" />
+
+	<flow id="4" begin="1" period="exp(0.25)" type="normalCar" route="perp2" departLane="0" departPos="0" departSpeed="avg" />
+
+
+	
+	<vehicle id="em_veh" type="emVehicle" route="ambulance" depart="670" departLane="0" departPos="0" departSpeed="avg" />
+	-->
+
+</routes>

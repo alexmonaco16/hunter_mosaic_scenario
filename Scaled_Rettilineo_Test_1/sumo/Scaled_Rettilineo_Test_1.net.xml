@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-03-08 12:18:26 by Eclipse SUMO netedit Version 1.19.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/home/alessandro/Desktop/mosaic-23.1/scenarios/Scaled_Rettilineo_Test_1/sumo/Scaled_Rettilineo_Test_1.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/alessandro/Desktop/mosaic-23.1/scenarios/Scaled_Rettilineo_Test_1/sumo/Scaled_Rettilineo_Test_1.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="0"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="true"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="0"/>
+    </pedestrian>
+
+</configuration>
+-->
+
+<net version="1.16" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="-429079.44,-4516147.87" convBoundary="0.00,0.00,600.00,0.00" origBoundary="14.159043,40.793467,14.202524,40.831927" projParameter="+proj=utm +zone=33 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"/>
+
+    <edge id="E0" from="J0" to="J1" priority="-1" length="3000.00">
+        <lane id="E0_0" index="0" speed="40.00" length="3000.00" shape="0.00,-1.60 600.00,-1.60"/>
+    </edge>
+
+    <junction id="J0" type="dead_end" x="0.00" y="0.00" incLanes="" intLanes="" shape="0.00,0.00 0.00,-3.20"/>
+    <junction id="J1" type="dead_end" x="600.00" y="0.00" incLanes="E0_0" intLanes="" shape="600.00,-3.20 600.00,0.00"/>
+
+</net>

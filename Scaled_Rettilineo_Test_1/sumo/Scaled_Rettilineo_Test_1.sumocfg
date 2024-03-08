@@ -1,0 +1,9 @@
+<configuration>
+    <input>
+        <net-file value="Scaled_Rettilineo_Test_1.net.xml"/>
+        <route-files value="Scaled_Rettilineo_Test_1.rou.xml"/>
+    </input>
+    <time>
+        <step-length value="0.02"/>
+    </time>
+</configuration>

@@ -1,0 +1,85 @@
+{
+    "config": {
+        "fixedOrder": true
+    },
+    "prototypes": [
+        {
+            "name": "Car",
+            "vehicleClass": "ElectricVehicle",
+            "accel": 2.6,
+            "decel": 1000.0,
+            "emergencyDecel": 6.0,
+            "length": 5.00,
+            "maxSpeed": 30.0,
+            "minGap": 2.5,
+            "sigma": 0.5,
+            "tau": 1,
+            "speedFactor": 1.0,
+            "speedMode": "DEFAULT",
+            "laneChangeMode": "OFF",
+            "deviations": {
+                "speedFactor": 0.0,
+                "length": 0.0,
+                "minGap": 0.0,
+                "maxSpeed": 0.0,
+                "accel": 0.0,
+                "decel": 0.0,
+                "tau": 0.0
+            }
+        },
+        {
+            "name": "LeadingCar",
+            "vehicleClass": "ElectricVehicle",
+            "accel": 2.6,
+            "decel": 4.5,
+            "emergencyDecel": 6.0,
+            "length": 5.00,
+            "maxSpeed": 20.0,
+            "minGap": 2.5,
+            "sigma": 0.5,
+            "tau": 1,
+            "speedFactor": 1.0,
+            "speedMode": "DEFAULT",
+            "laneChangeMode": "OFF",
+            "deviations": {
+                "speedFactor": 0.0,
+                "length": 0.0,
+                "minGap": 0.0,
+                "maxSpeed": 0.0,
+                "accel": 0.0,
+                "decel": 0.0,
+                "tau": 0.0
+            }
+        }
+    ],
+    "vehicles": [
+        {
+            "startingTime": "12.0 s",
+            "targetFlow": 1800,
+            "maxNumberVehicles": 1,
+            "pos": 0,
+            "route": "route0",
+            "types": [
+                {
+                    "name": "Car",
+                    "applications": [ "org.eclipse.mosaic.app.alex.RosVehicleApp" ],
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "startingTime": "5.0 s",
+            "targetFlow": 1800,
+            "maxNumberVehicles": 1,
+            "pos": 0,
+            "route": "route0",
+            "types": [
+                {
+                    "name": "LeadingCar",
+                    "applications": [ "org.eclipse.mosaic.app.alex.LeadingVehicle_CamSendingApp" ],
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+12:20:00.957 INFO  - 
+12:20:00.959 ERROR - 
+12:20:00.959 ERROR - Neither net file nor route file given
+java.lang.IllegalArgumentException: Neither net file nor route file given
+	at com.dcaiti.mosaic.tools.scenarioconvert.config.b.b(Unknown Source)
+	at com.dcaiti.mosaic.tools.scenarioconvert.config.b.a(Unknown Source)
+	at com.dcaiti.mosaic.tools.scenarioconvert.config.a.a(Unknown Source)
+	at com.dcaiti.mosaic.tools.scenarioconvert.core.Starter.main(Unknown Source)
+12:20:00.960 ERROR - 
+12:20:00.960 ERROR - Please use the -h option to get usage help printed.
